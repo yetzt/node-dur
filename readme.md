@@ -1,5 +1,3 @@
-# dur
-
 JavaScript uses milliseconds as a representation of time, which hard to read. dur.js converts human readable strings to an integer of milliseconds while it's synchronous, very tolerant on input and easy to use.
 
 ## Install
