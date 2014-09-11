@@ -30,6 +30,12 @@ console.log(dur("4.12342323232 seconds")); // 4123
 /* if you repeat yourself, it's added up */
 console.log(dur("1 d 2d")); // 259200000
 
+/* provide a default value if dealing with user input */
+console.log(dur(undefined, 1234)); // 1234
+
+/* else you will get null */
+console.log(dur(undefined)); // null
+
 ````
 
 ## Time Units

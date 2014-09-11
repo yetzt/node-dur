@@ -1,8 +1,13 @@
 #!/sur/bin/env node
 
-var dur = module.exports = function(s) {
+var dur = module.exports = function(s, d) {
+	if (typeof s === "number") return Math.round(s);
+	var d = (typeof d === "number") ? Math.round(d) : null;
+	if (typeof s !== "string") return d;
 	var tot = 0.0;
-	s.toLowerCase().match(/[0-9]+([\.,][0-9]+)?\s*(weeks|week|day|days|min|mins|minutes|minute|hrs|hr|hour|hours|sec|secs|second|seconds|[wdhms])/g).forEach(function(m){
+	var atoms = s.toLowerCase().match(/[0-9]+([\.,][0-9]+)?\s*(weeks|week|day|days|min|mins|minutes|minute|hrs|hr|hour|hours|sec|secs|second|seconds|[wdhms])/g);
+	if (!atoms) return d;
+	atoms.forEach(function(m){
 		var match = m.match(/^(([0-9]+)([\.,][0-9]+)?)\s*(weeks|week|day|days|min|mins|minutes|minute|hrs|hr|hour|hours|sec|secs|second|seconds|[wdhms])$/);
 		var num = parseFloat(match[1].replace(/,/g,'.'));
 		switch(match[4]) {

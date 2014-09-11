@@ -1,6 +1,6 @@
 {
 	"name": "dur",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "convert durations strings to an integer of milliseconds",
 	"author": "Sebastian Vollnhals <sebastian@vollnhals.info> (http://vollnhals.info/)",
 	"maintainers": [{
