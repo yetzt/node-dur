@@ -1,4 +1,4 @@
-#!/sur/bin/env node
+#!/usr/bin/env node
 
 var dur = module.exports = function(s, d) {
 	if (typeof s === "number") return Math.round(s);
