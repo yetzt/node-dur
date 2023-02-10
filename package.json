@@ -1,6 +1,6 @@
 {
   "name": "dur",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "convert duration strings to an integer of milliseconds",
   "author": "yetzt <node@yetzt.me>",
   "main": "./dur.js",

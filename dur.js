@@ -43,8 +43,8 @@ const lookup = {
 
 const dur = module.exports = function dur(str, fallback){
 	// find all "$number $unit", parse and add up.
-	let n = [...str.toLowerCase().matchAll(/(-?[0-9\.]+) *([a-z])/g)].reduce(function(s, [ a, n, d, w ]){
-		return s + parseFloat(n)||0 * (lookup[w] || 0);
+	let n = [...str.toLowerCase().matchAll(/(-?[0-9\.]+) *([a-z]*)/g)].reduce(function(s, [ a, n, w ]){
+		return s + (parseFloat(n)||0) * (lookup[w] || 0);
 	}, 0);
 	// if NaN, use fallback or null
 	return !isNaN(n) ? n : !isNaN(fallback) ? fallback : null;
