@@ -1,18 +1,20 @@
 {
-	"name": "dur",
-	"version": "0.0.3",
-	"description": "convert durations strings to an integer of milliseconds",
-	"author": "yetzt <node@yetzt.me>",
-	"main": "./dur.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/yetzt/node-dur.git"
-	},
-	"keywords": [
-		"dur",
-		"duration",
-		"time",
-		"date"
-	],
-	"license": "UNLICENSE"
+  "name": "dur",
+  "version": "1.0.0",
+  "description": "convert duration strings to an integer of milliseconds",
+  "author": "yetzt <node@yetzt.me>",
+  "main": "./dur.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yetzt/node-dur.git"
+  },
+  "keywords": [
+    "dur",
+    "duration",
+    "time",
+    "date",
+    "ms",
+    "parse"
+  ],
+  "license": "Unlicense"
 }

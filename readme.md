@@ -1,16 +1,16 @@
-JavaScript uses milliseconds as a representation of time, which hard to read. dur.js converts human readable strings to an integer of milliseconds while it's synchronous, very tolerant on input and easy to use.
+JavaScript uses milliseconds as a representation of time, which hard to read. `dur` converts human readable strings to an integer of milliseconds while it's synchronous, very tolerant on input and easy to use.
 
 ## Install
 
-``` 
-npm install dur
+```
+npm i dur
 ```
 
 ## Usgae
 
-```` javascript
+``` js
 
-var dur = require("dur");
+const dur = require("dur");
 
 /* 5 minutes */
 console.log(dur("5m")); // = 300000
@@ -36,16 +36,18 @@ console.log(dur(undefined, 1234)); // 1234
 /* else you will get null */
 console.log(dur(undefined)); // null
 
-````
+```
 
 ## Time Units
 
-* Week: `weeks`, `week`, `w`
-* Days: `days`, `day`, `d`
-* Hours: `hours`, `hour`, `hrs`, `hr`, `h`
-* Minutes: `minutes`, `minute`, `mins`, `min`, `m`
-* Seconds: `seconds`, `second`, `secs`, `sec`, `s`
+* Year: `years`, `year`, `yrs`, `yr`, `y`
+* Week: `weeks`, `week`, `wks`, `wk`, `w`
+* Days: `days`, `day`, `dy`, `d`
+* Hours: `hours`, `hour`, `hrs`, `hr`, `hs`, `h`
+* Minutes: `minutes`, `minute`, `mins`, `min`, `mn`, `m`
+* Seconds: `seconds`, `second`, `scnds`, `scnd`, `secs`, `sec`, `s`
+* Milliseconds: `milliseconds`, `millisecond`, `msecs`, `msec`, `ms`, ``
 
 ## License
 
-[Public Domain](http://unlicense.org/UNLICENSE).
+[Unlicense](http://unlicense.org/UNLICENSE).
